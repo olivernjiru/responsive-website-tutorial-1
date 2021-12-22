@@ -1,0 +1,11 @@
+/* to remove the default style of the browser */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    body {
+        font-family: sans-serif;
+        font-size: 35px;
+    }
+}
