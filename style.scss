@@ -1,3 +1,8 @@
+$color-1 : #cdb4db; // Mobile 
+$color-2 : #fff1e6; // Tablet
+$color-3 : #52b788; // Laptop
+$color-4 : #bee1e6; // Desktop
+
 /* to remove the default style of the browser */
 * {
     margin: 0px;
@@ -8,4 +13,34 @@
         font-family: sans-serif;
         font-size: 35px;
     }
+}
+
+.container{
+    height: 100vh;
+
+    /* display: flex; */
+    /* to center stuff at the center of the x-axix */ 
+    /* justify-content: center; */
+    /* to center stuff at the center of the y-axis */
+    /* align-items: center; */
+
+    display: grid;
+    /* to center stuff at the center of both the x and y-axis */ 
+    place-content: center;
+    background-color: $color-1;
+}
+
+.text{
+    color: #000;
+}
+
+#size{
+    position: absolute;
+
+    top: 60%;
+    left: 50%;
+    /* to center it properly along the x-axis */
+    transform: translate(-50%);
+    font-size: 35px;
+    color: red;
 }
